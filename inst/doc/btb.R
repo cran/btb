@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -9,11 +9,11 @@ knitr::opts_chunk$set(
 )
 
 ## ----setup , eval = FALSE-----------------------------------------------------
-#  install.packages("btb")
+# install.packages("btb")
 
-## ---- eval = F----------------------------------------------------------------
-#  install.packages("remotes")
-#  remotes::install_github("InseeFr/btb")
+## ----eval = F-----------------------------------------------------------------
+# install.packages("remotes")
+# remotes::install_github("InseeFr/btb")
 
 ## ----seepoints , eval = T-----------------------------------------------------
 library(btb)
@@ -25,7 +25,7 @@ library(sf)
 sfPrix_SP95_2016 <- st_as_sf(dfPrix_SP95_2016,coords = c("x","y"), crs=2154)
 plot(sfPrix_SP95_2016$geometry)
 
-## ---- addcentro---------------------------------------------------------------
+## ----addcentro----------------------------------------------------------------
 dfPrix_SP95_2016 <- btb_add_centroids(dfPrix_SP95_2016, 
                                       iCellSize = 20000,
                                       names_coords = c("x","y"))
@@ -183,5 +183,5 @@ head(smooth_reunion)
 
 
 ## ----export, eval=FALSE-------------------------------------------------------
-#  sf::write_sf("MY/REPOSITORY/myfile.gpkg")
+# sf::write_sf("MY/REPOSITORY/myfile.gpkg")
 

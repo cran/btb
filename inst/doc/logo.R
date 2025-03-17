@@ -1,4 +1,4 @@
-## ---- include = FALSE, message=FALSE------------------------------------------
+## ----include = FALSE, message=FALSE-------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -8,16 +8,16 @@ knitr::opts_chunk$set(
   
 )
 
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 library(sf)
 library(dplyr)
 library(mapsf)
 
-## ---- eval=FALSE--------------------------------------------------------------
-#  library(sf)
-#  library(dplyr)
-#  library(mapsf)
-#  library(hexbin)
+## ----eval=FALSE---------------------------------------------------------------
+# library(sf)
+# library(dplyr)
+# library(mapsf)
+# library(hexbin)
 
 ## -----------------------------------------------------------------------------
 b1 <- "POLYGON ((-12076233 5319120, -11880555 5328904, -11528333 5201712,-11362006 4986466, -11391358 4683163, -11479413 4438565, -11782715 4311374,-12448023 4340726, -12389319 6229026, -12017530 6229026, -12076233 5319120),(-12164208 4569828, -11795932 4579271, -11663730 4692586, -11682616 4938104,-12145322 5060862, -12164208 4569828))"
@@ -26,7 +26,7 @@ b2 <- "POLYGON ((-9376233 5319120, -9180555 5328904, -8828333 5201712,-8662006 4
 letters =  st_as_sf(data.frame(geom=c(b1,t,b2)), wkt = "geom") %>% st_set_crs(3857)
 plot(letters)
 
-## ---- echo = FALSE------------------------------------------------------------
+## ----echo = FALSE-------------------------------------------------------------
 hexcoords <- function (dx, dy = NULL, n = 1, sep = NULL) 
 {
     stopifnot(length(dx) == 1)
@@ -69,26 +69,24 @@ sample <- data.frame(st_coordinates(sample))
 sample$nobs <- 1
 colnames(sample) <- c("x","y","nobs")
 
-## ---- eval = FALSE------------------------------------------------------------
-#  sfCarrLiss <- btb::kernelSmoothing(dfObservations = sample,
-#                                     sEPSG = "3857",
-#                                     iCellSize = 10000,
-#                                     iBandwidth = 200000)
-#  
+## ----eval = FALSE-------------------------------------------------------------
+# sfCarrLiss <- btb::kernelSmoothing(dfObservations = sample,
+#                                    sEPSG = "3857",
+#                                    iCellSize = 10000,
+#                                    iBandwidth = 200000)
+# 
 
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 sfCarrLiss <- btb::kernelSmoothing(dfObservations = sample, 
                                    sEPSG = "3857",
                                    iCellSize = 10000, 
                                    iBandwidth = 200000)
 
 ## -----------------------------------------------------------------------------
-
-mf_init(x=hexagon,theme = mf_theme(list(bg = "#FFFFFFFF")))
- mf_map(x = hexagon, 
+mf_theme(bg = "#FFFFFFFF")
+mf_map(x = hexagon, 
         border="#7D0025",
-        col="#7D0025",
-        add = TRUE)
+        col="#7D0025")
  mf_map(x = hexagon_int, 
         border="#e8f4f8",
         col="#e8f4f8",
