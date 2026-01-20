@@ -1,6 +1,6 @@
-b1cd69bf11dd54631b588c7c46aa49bb *DESCRIPTION
+03e938b0ee68aaafd28d7b4654b101ca *DESCRIPTION
 3f7731ada59c9c71741fc9ad0c704e8e *NAMESPACE
-7ce8f22f34d6be77d43bb53f3bd1e61b *NEWS.md
+094c1ea78d0b511401d1ebcd9706a4d8 *NEWS.md
 c1a2aba71104fb4f2db7e06b21082508 *R/RcppExports.R
 7c1c2818b367c20af808634b94bb4979 *R/btb.R
 8a1ef23f7fd9679f0a8d184aaf7d787f *R/btb_add_centroids.R
@@ -15,7 +15,7 @@ b595e1b72547ba60ece071ea12c392fc *R/pixel_france.R
 c76aed767370a1c00939723b18828309 *R/reunion.R
 b56ff2b193ecba52f9ec7f3b10cca008 *R/utils-pipe.R
 6cdb12960f5f7f24141eb2fd96f7bbbb *README.md
-5690aa0d4ea48347dcfcc8fb5a4647e2 *build/vignette.rds
+8e20871a54424de395725f67857eaea3 *build/vignette.rds
 a47b0942d8c6ee94b6e209e1177fabce *data/datalist
 8d17508ed2f63e0b7d7676f6c9c66267 *data/dfPrix_SP95_2016.RData
 7d415ccdbf72a83b02b16087bcb25182 *data/dfRestaurantParis.RData
@@ -23,10 +23,10 @@ a47b0942d8c6ee94b6e209e1177fabce *data/datalist
 464820fae6303b5f736c456627c6bf1f *data/reunion.RData
 e536af79c2fc862a0cf0281efd3cfbfe *inst/doc/btb.R
 a67559b4bb544d4e25a31f216117c8bc *inst/doc/btb.Rmd
-0d4bdf06a9a27077b4c0744565c32dda *inst/doc/btb.html
-c8b16a7b7e6b863ca0d56c128698a357 *inst/doc/logo.R
-8bcb95de718c85fe7d588bc2461cfeb1 *inst/doc/logo.Rmd
-9aba932ec3604eec7ca2a350a6cefd5d *inst/doc/logo.html
+50b1acafb4232d6ba8d189733c4ba25a *inst/doc/btb.html
+5ecfae12d0decf340081fb15df418a43 *inst/doc/logo.R
+aebd51d9dc75b21e4f33ffffa67582cc *inst/doc/logo.Rmd
+ab26d59c1693024aa9432137be1772ba *inst/doc/logo.html
 d067dfc585e8b0dc83cd4b26759b452c *man/btb.Rd
 7821d9a3c9ad4f7a035e88a6a56cc161 *man/btb_add_centroids.Rd
 a53929e3bdf20fee92a9b28efe59186f *man/btb_add_inspire.Rd
@@ -70,4 +70,4 @@ e584bea29d8778560a5eff9c1c12fc57 *tests/testthat/test-btb_add_inspire.R
 6ffbdbf95c3d5018617f2af824e33134 *tests/testthat/test-dfToGrid.R
 9fe2d6050538ad27339d02191a3af680 *tests/testthat/test-kernelSmoothing.R
 a67559b4bb544d4e25a31f216117c8bc *vignettes/btb.Rmd
-8bcb95de718c85fe7d588bc2461cfeb1 *vignettes/logo.Rmd
+aebd51d9dc75b21e4f33ffffa67582cc *vignettes/logo.Rmd
